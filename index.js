@@ -41,10 +41,11 @@ function deleteTweet(tweetdelete){
     tweetsData.forEach(function(tweet,index){
         if(tweet.uuid== tweetdelete){
             chosenDelete = index
+            console.log(tweetsData[chosenDelete])
             
         }
     })
-    
+    console.log(tweetsData[chosenDelete])
     tweetsData.splice(chosenDelete,1)
     render()
 }
