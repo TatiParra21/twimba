@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 
 let tweetsData = JSON.parse(localStorage.getItem("tweetData"))
 console.log(tweetsData)
-if(tweetsData.length ==0){
+if(!tweetsData?.length){
     
     localStorage.setItem("tweetData",JSON.stringify(tweetsData0)) //still unsure if its still needed
     updateTweetsData()
