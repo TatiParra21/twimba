@@ -209,7 +209,7 @@ function getFeedHtml(){
                 
                 <i class="fa-solid fa-ellipsis" data-option="${tweet.uuid}"></i>
                 <div class="hidden" id="option-${tweet.uuid}">
-                <button class="delete-tweet-btn"data-deletebtn="delete-${tweet.uuid}">delete tweet</button>
+                <button class="delete-tweet-btn"data-deletebtn="${tweet.uuid}">delete tweet</button>
             </div>
                 </div>
             </div>   
